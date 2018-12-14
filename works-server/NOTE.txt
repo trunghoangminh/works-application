@@ -1,0 +1,6 @@
+@RestController = @Controller + @ResponseBody
+ResponseEntity<T> = @ResponseBody
+But ResponseEntity<T> allow adding flexibility in defining arbitrary HTTP response headers
+
+With @RestController or @Controller + @ResponseBody in class scope we don't need these things to scope method
+With @Controller in class scope we must add @ResponseBody or ResponseEntity<T> for each method
